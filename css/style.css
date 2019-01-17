@@ -6,19 +6,30 @@ font-family: 'Nanum Myeongjo', serif;
 body {
     font-family: 'Noto Sans KR', sans-serif;
 }
+.hdrsldwrap {
+    width: 100vw;
+    height: 100vh;
+    background: #0F0729;
+}
 .header {
     width: 100vw;
     height: 100px; 
     background: #241162;
 }
+.header h1 {
+    line-height: 100px;
+    float: left;
+}
 .header h1 a {
     font-size:24px;
     color: #fff;
+    padding: 10px 20px;
 }
 .header nav>ul {
     width: 396px;
     height: 28px;
     float: right;
+    line-height: 100px;
 }
 .header nav>ul>li {
     display: inline-block;
@@ -42,7 +53,8 @@ body {
     width: 180px;
     background: #241162;
     position: absolute;
-    top: 66px;
+    top: 64px;
+    left: -20px;
     visibility: hidden;
 }
 .header nav ul li ul li a {
@@ -53,4 +65,13 @@ body {
 .header nav ul li ul li a:hover {
     background: #81C8A0;
     color: #fff;
+}
+
+.slide.wrapper {
+    clear: both;
+}
+.slide.wrapper .wrap {
+    width: 100%;
+    height: 100%;
+    background: #81C8A0;
 }
