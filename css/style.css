@@ -9,7 +9,7 @@ body {
 .hdrsldwrap {
     width: 100vw;
     height: 100vh;
-    background: #0F0729;
+    /* background: #0F0729; */
 }
 .hdrsldwrap>.wrap {
     height: 100%;
@@ -78,21 +78,388 @@ body {
 .hdrsldwrap>.wrap>.slide.wrapper>.wrap {
     width: 100%;
     height: 100%;
+    position: relative;
 }
-/* .hdrsldwrap>.wrap>.slide.wrapper>.wrap::after {
-    content: "";
-    line-height: 0;
-} */
 .hdrsldwrap>.wrap>.slide.wrapper>.wrap>.sld {
     width: 100%;
     height: 100%;
 }
 .hdrsldwrap>.wrap>.slide.wrapper>.wrap>.sld ul {
-    width: 100%;
+    width: 400%;
     height: 100%;
+    display: flex;
 }
 .hdrsldwrap>.wrap>.slide.wrapper>.wrap>.sld ul li.sld1 {
     background: #ec407a;
     width: 100%;
     height: 100%;
+}
+.hdrsldwrap>.wrap>.slide.wrapper>.wrap>.sld ul li.sld2 {
+    background: #ab47bc;
+    width: 100%;
+    height: 100%;
+}
+.hdrsldwrap>.wrap>.slide.wrapper>.wrap>.sld ul li.sld3 {
+    background: #5c6bc0;
+    width: 100%;
+    height: 100%;
+}
+.hdrsldwrap>.wrap>.slide.wrapper>.wrap>.indicator ul {
+    width: 200px;
+    height: 20px;
+    /* display: relative; */
+}
+.hdrsldwrap>.wrap>.slide.wrapper>.wrap>.indicator ul li {
+    background: #0095a8;
+    width: 20px;
+    height: 20px;
+    margin: 0 2px;
+    display: inline-block;
+    position: relative;
+    left: calc(100vw - 55vw);
+    bottom: 150px;
+    /* position: absolute;
+    left: 50%;
+    top: 80%; */
+    border-radius: 20px;
+}
+.hdrsldwrap>.wrap>.slide.wrapper>.wrap>.indicator ul li.on {
+    background: #6ff9ff;
+    width: 60px;
+    height: 20px;
+}
+
+.sec.wkshop {
+    width: 100vw;
+    height: 1430px;
+    /* border: 1px solid green;     */
+}
+.sec.wkshop>.prgrm {
+    width: 775px;
+    height: 550px;
+    border: 1px solid pink;
+    margin: 75px auto 160px;
+}
+.sec.wkshop>.prgrm h2 {
+    width: 286px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 26px;
+    margin: 0 auto 44px auto;
+}
+.sec.wkshop>.prgrm h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #000;
+}
+.sec.wkshop>.prgrm>.wrap {
+    width: inherit;
+    height: 450px;
+    border: 1px solid #ec407a;
+    display: flex;
+    justify-content: space-between;
+}
+.sec.wkshop>.prgrm>.wrap>.wkscard {
+    width: 350px;
+    height: inherit;
+    border: 1px solid #000;
+}
+.sec.wkshop>.prgrm>.wrap>.wkscard>.bgimg {
+    width: inherit;
+    height: 290px;
+    border: 1px solid green;
+}
+.sec.wkshop>.prgrm>.wrap>.wkscard>.bgimg>.mrk {
+    width: 104px;
+    height: 46px;
+    padding: 6px;
+    background: #241162;
+    color: #fff;
+}
+.sec.wkshop>.prgrm>.wrap>.wkscard>.bgimg>.mrk p:nth-child(1) {
+    font-size: 13px;
+    margin-bottom: 6px;
+}
+.sec.wkshop>.prgrm>.wrap>.wkscard>.bgimg>.mrk p:nth-child(2) {
+    font-size: 10px;
+}
+.sec.wkshop>.prgrm>.wrap>.wkscard>.txtarea {
+    padding: 36px 30px;
+    color: #241162;
+    text-align: justify;
+}
+.sec.wkshop>.prgrm>.wrap>.wkscard>.txtarea h3 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.sec.wkshop>.prgrm>.wrap>.wkscard>.txtarea p {
+    width: 290px;
+    height: 66px;
+    font-size: 14px;
+    line-height: 16px;
+}
+
+.sec.wkshop>.rvw h2 {
+    width: 286px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    padding-bottom: 26px;
+    margin: 0 auto 44px auto;
+}
+.sec.wkshop>.rvw h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #000;
+}
+.sec.wkshop>.rvw>.btns {
+    width: 140px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+}
+.sec.wkshop>.rvw>.btns>a .fas {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: #241162;
+    font-size: 50px;
+    color: #fff;
+    line-height: 60px;
+}
+.sec.wkshop>.rvw>.btns>a .fas:nth-child(1) {
+    margin-right: 10px;
+}
+
+.sec.wkshop>.rvw>.wrap {
+    width: 100vw;
+    /* border: 1px solid red; */
+}
+.sec.wkshop>.rvw>.wrap>.wrapper {
+    overflow: hidden;
+    width: 1200px;
+    height: 450px;
+    /* border: 1px solid orange; */
+    margin: 50px auto;
+    font-size: 0;
+    display: flex;
+}
+.sec.wkshop>.rvw>.wrap>.wrapper>.wksrvwcard {
+    display: inline-block;
+    margin-right: 30px; 
+    padding: 40px 34px;
+    width: 380px;
+    height: 450px; 
+    border: 1px solid pink;
+}
+.sec.wkshop>.rvw>.wrap>.wrapper>.wksrvwcard>.wksrvw>h3 {
+    width: 192px;
+    position: relative;
+    font-size: 18px;
+    color: #241162;
+    padding-bottom: 10px;
+    margin-bottom: 14px;
+}
+.sec.wkshop>.rvw>.wrap>.wrapper>.wksrvwcard>.wksrvw>h3::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #D87A54;
+}
+.sec.wkshop>.rvw>.wrap>.wrapper>.wksrvwcard>.wksrvw>p {
+    overflow: hidden;
+    width: 310px;
+    height: 280px;
+    text-overflow: ellipsis;
+    text-align: justify;
+    font-size: 18px;
+    color: #434343;
+    line-height: 27px;
+}
+.sec.wkshop>.rvw>.wrap>.wrapper>.wksrvwcard>.wksrvw>a {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 23px auto;
+}
+.sec.wkshop>.rvw>.wrap>.wrapper>.wksrvwcard>.wksrvw>a .fas {
+    width: 40px;
+    height: 40px;
+    border-radius: 40px;
+    display: inline-block;
+    background: #241162;
+    color: #fff;
+}
+
+.sec.wrkbook {
+    background: #49956A;
+    width: 100vw;
+    height: 900px;
+}
+.sec.wrkbook h2 {
+    width: 286px;
+    font-family: 'Nanum Myeongjo', serif;
+    font-size: 30px;
+    text-align: center;
+    position: relative;
+    padding: 76px 0 26px 0;
+    margin: 0 auto 44px auto;
+    /* border: 1px solid red; */
+}
+.sec.wrkbook h2::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background: #000;
+}
+.sec.wrkbook>.btns {
+    width: 140px;
+    height: 60px;
+    margin: 0 auto;
+    font-size: 0;
+    text-align: center;
+}
+.sec.wrkbook>.btns>a .fas {
+    width: 60px;
+    height: 60px;
+    border-radius: 60px;
+    background: #241162;
+    font-size: 50px;
+    color: #fff;
+    line-height: 60px;
+}
+.sec.wrkbook>.btns>a .fas:nth-child(1) {
+    margin-right: 10px;
+}
+
+.sec.wrkbook>.wrkbprt {
+    width: 1200px;
+    height: 450px;
+    border: 1px solid #000;
+    margin: 50px auto;
+}
+.sec.wrkbook>.wrkbprt>.wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.sec.wrkbook>.wrkbprt .wrkb {
+    width: 293px;
+    height: 450px;
+    border: 1px solid hotpink;
+}
+.sec.wrkbook>.wrkbprt .wrkb.hvrhddn {
+    position: relative;
+    bottom: 450px;
+    background: rgb(40, 18, 100);
+}
+
+.sec.wrkbook>.txtarea {
+    text-align: center;
+}
+.sec.wrkbook>.txtarea p {
+    margin-bottom: 14px;
+    font-size: 18px;
+    color: #241162;
+}
+.sec.wrkbook>.txtarea>input {
+    display: inline-block;
+    border: 0;
+    background: rgba(0,0,0,0);
+    color: #fff;
+}
+.sec.wrkbook>.txtarea>.mailadd {
+    padding: 6px;
+    border-bottom: 1px solid #241162;
+    width: 250px;
+    height: 25px;
+    font-size: 18px;
+}
+.sec.wrkbook>.txtarea>.mailadd::placeholder {
+    color: #ddd;
+}
+.sec.wrkbook>.txtarea>.btnsub {
+    width: 70px;
+    height: 36px;
+    background: #241162;
+    border-radius: 4px;
+    font-size: 16px;
+}
+footer {
+    padding: 60px;
+    height: 250px;
+    background: #241162;
+    text-align: center;
+}
+footer>p a {
+    display: inline-block;
+    position: relative;
+}
+footer>p:nth-child(1) a {
+    color: #bbb;
+    margin-bottom: 34px;
+}
+footer>p:nth-child(1) a:nth-child(1) {
+    padding-right: 10px; 
+}
+footer>p:nth-child(1) a:nth-child(2) {
+    padding-left: 5px; 
+}
+footer>p:nth-child(1) a:nth-child(1)::after {
+    content: '';
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: #fff;
+}
+footer>p:nth-child(2) {
+    margin: 0 auto;
+    width: 800px;
+    height: 120px;
+    /* border: 1px solid #fff; */
+    font-size: 18px;
+    color: #bbb;
+    line-height: 40px;
+}
+footer>p:nth-child(2)>.emph {
+    font-weight: bold;
+}
+footer>p:nth-child(2)>.cpyrgt {
+    font-weight: lighter;
+    color: #fff;
+}
+footer>.btns {
+    display: flex;
+    justify-content: space-between;
+    margin: 30px auto;
+    width: 250px;
+    height: 50px;
+    /* border: 1px solid pink; */
+}
+footer>.btns a {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 52px;
 }
